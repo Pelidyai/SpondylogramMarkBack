@@ -35,7 +35,6 @@ class _RadiographComparator:
         result_coefficient = 1.0
         result_coefficient *= cls.__calc_coefficient(to_compare.mean, reference.mean)
         result_coefficient *= cls.__calc_coefficient(to_compare.median, reference.median)
-        result_coefficient *= cls.__calc_coefficient(to_compare.std, reference.std)
         return result_coefficient
 
     @staticmethod
